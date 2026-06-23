@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "lingofall-puzzle-generator",
+      "name": "puzzle-generator",
       "devDependencies": {
         "@types/bun": "latest",
         "typescript": "latest",

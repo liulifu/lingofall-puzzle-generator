@@ -1,7 +1,7 @@
 ﻿{
-  "name": "lingofall-puzzle-generator",
+  "name": "puzzle-generator",
   "version": "0.1.0",
-  "description": "A noncommercial crossword puzzle generator resource extracted from lingofall.",
+  "description": "A noncommercial crossword puzzle generator resource.",
   "type": "module",
   "license": "PolyForm-Noncommercial-1.0.0",
   "exports": {

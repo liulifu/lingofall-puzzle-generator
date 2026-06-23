@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">Puzzle generator flow</title>
+  <desc id="desc">A visual overview showing candidates and profile settings flowing into the generator, then through validation and export into JSON puzzle data.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FBFF"/>
+      <stop offset="100%" stop-color="#EEF5F8"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#435B6B"/>
+    </marker>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .card { fill: url(#panel); stroke: #C7D6DF; stroke-width: 2; rx: 18; }
+      .card-dark { fill: #102A3A; stroke: #102A3A; stroke-width: 2; rx: 18; }
+      .label { font: 700 24px Arial, sans-serif; fill: #102A3A; }
+      .text { font: 16px Arial, sans-serif; fill: #405465; }
+      .small { font: 14px Arial, sans-serif; fill: #617584; }
+      .inverse-label { font: 700 24px Arial, sans-serif; fill: #FFFFFF; }
+      .inverse-text { font: 16px Arial, sans-serif; fill: #DDEAF0; }
+      .arrow { stroke: #435B6B; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .grid-line { stroke: #B8CAD5; stroke-width: 1; }
+      .cell { fill: #FFFFFF; stroke: #879DAA; stroke-width: 2; rx: 4; }
+      .cell-dark { fill: #D9E7EE; stroke: #879DAA; stroke-width: 2; rx: 4; }
+      .letter { font: 700 18px Arial, sans-serif; fill: #102A3A; text-anchor: middle; dominant-baseline: middle; }
+      .pill { fill: #E7F0F4; stroke: #B8CAD5; stroke-width: 1; rx: 12; }
+      .pill-text { font: 13px Arial, sans-serif; fill: #405465; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1120" height="520"/>
+  <text class="label" x="56" y="58">puzzle-generator</text>
+  <text class="text" x="56" y="86">Candidate words and profile settings become validated crossword puzzle JSON.</text>
+
+  <rect class="card" x="56" y="130" width="220" height="160"/>
+  <text class="label" x="82" y="170">Candidates</text>
+  <rect class="pill" x="82" y="194" width="148" height="28"/>
+  <text class="pill-text" x="98" y="213">answer + clue</text>
+  <rect class="pill" x="82" y="232" width="114" height="28"/>
+  <text class="pill-text" x="98" y="251">weight</text>
+
+  <rect class="card" x="56" y="320" width="220" height="130"/>
+  <text class="label" x="82" y="360">Profile</text>
+  <text class="text" x="82" y="392">board size</text>
+  <text class="text" x="82" y="420">entry count</text>
+
+  <path class="arrow" d="M282 210 C324 210 330 230 366 230"/>
+  <path class="arrow" d="M282 382 C326 382 332 288 366 288"/>
+
+  <rect class="card-dark" x="370" y="178" width="260" height="178"/>
+  <text class="inverse-label" x="400" y="222">Generator</text>
+  <text class="inverse-text" x="400" y="254">seeded search</text>
+  <text class="inverse-text" x="400" y="282">crossing placements</text>
+  <text class="inverse-text" x="400" y="310">quality scoring</text>
+
+  <path class="arrow" d="M636 267 C676 267 686 267 724 267"/>
+
+  <rect class="card" x="730" y="132" width="166" height="146"/>
+  <text class="label" x="756" y="172">Validate</text>
+  <text class="text" x="756" y="204">connected</text>
+  <text class="text" x="756" y="232">compact</text>
+
+  <rect class="card" x="730" y="304" width="166" height="146"/>
+  <text class="label" x="756" y="344">Export</text>
+  <text class="text" x="756" y="376">plain objects</text>
+  <text class="text" x="756" y="404">JSON-ready</text>
+
+  <path class="arrow" d="M902 205 C940 205 948 238 982 238"/>
+  <path class="arrow" d="M902 376 C940 376 948 308 982 308"/>
+
+  <rect class="card" x="986" y="182" width="86" height="170"/>
+  <g transform="translate(1006 210)">
+    <rect class="cell" x="0" y="0" width="28" height="28"/>
+    <rect class="cell" x="28" y="0" width="28" height="28"/>
+    <rect class="cell-dark" x="56" y="0" width="28" height="28"/>
+    <rect class="cell-dark" x="0" y="28" width="28" height="28"/>
+    <rect class="cell" x="28" y="28" width="28" height="28"/>
+    <rect class="cell" x="56" y="28" width="28" height="28"/>
+    <rect class="cell" x="0" y="56" width="28" height="28"/>
+    <rect class="cell" x="28" y="56" width="28" height="28"/>
+    <rect class="cell" x="56" y="56" width="28" height="28"/>
+    <rect class="cell" x="0" y="84" width="28" height="28"/>
+    <rect class="cell-dark" x="28" y="84" width="28" height="28"/>
+    <rect class="cell" x="56" y="84" width="28" height="28"/>
+    <text class="letter" x="14" y="14">J</text>
+    <text class="letter" x="42" y="14">S</text>
+    <text class="letter" x="42" y="42">O</text>
+    <text class="letter" x="70" y="42">N</text>
+    <text class="letter" x="14" y="70">D</text>
+    <text class="letter" x="42" y="70">A</text>
+    <text class="letter" x="70" y="70">T</text>
+    <text class="letter" x="14" y="98">A</text>
+    <text class="letter" x="70" y="98">A</text>
+  </g>
+</svg>
