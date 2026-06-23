@@ -6,7 +6,7 @@ This resource contains the puzzle generation engine used to build compact crossw
 
 ## License
 
-This resource is licensed under the PolyForm Noncommercial License 1.0.0. Commercial use is not permitted without a separate written license from the copyright holder.
+This resource is available for noncommercial use under the PolyForm Noncommercial License 1.0.0. Commercial use requires separate written permission or a separate commercial license from Liulifu.
 
 See `LICENSE.md` and `NOTICE` for the required notice and license terms.
 

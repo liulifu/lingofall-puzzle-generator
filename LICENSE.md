@@ -1,4 +1,4 @@
-﻿Required Notice: Copyright (c) 2026 Liulifu. The lingofall puzzle generator resource is licensed for noncommercial use only.
+﻿Required Notice: Copyright (c) 2026 Liulifu. The lingofall puzzle generator resource is available for noncommercial use under PolyForm Noncommercial 1.0.0; commercial use requires separate written permission from Liulifu.
 
 # PolyForm Noncommercial License 1.0.0
 
@@ -131,4 +131,5 @@ software under these terms.
 
 **Use** means anything you do with the software requiring one
 of your licenses.
+
 
